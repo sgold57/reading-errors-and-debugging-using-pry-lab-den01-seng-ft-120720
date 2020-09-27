@@ -2,7 +2,10 @@
 
 def snake_it_up(string)
   if string[0] == "s"
-    ((10.to_s) * "s") + string
+    count = 10
+      while count > 0 do
+        string = "s" + string
+      end
   else
     string
   end
